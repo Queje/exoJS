@@ -13,54 +13,7 @@ const books = [
     { title: 'Guerre et Paix', id: 748147, rented: 19 }
   ];
 
-
-  console.log("tous les livres ont ils été empruntés au moins une fois ?");
-
-  books.forEach(index => {
-    if (index.rented === 0) {
-        return console.log(true);}
-    else {
-        return console.log(false)
-  }});
-
-
-
-
-
-  console.log("le livre le plus emprunté est :");
-
-  books.sort(function compare(a, b) {
-    if (a.rented > b.rented)
-       return -1;
-    if (a.rented < b.rented)
-       return 1;
-    return 0;
-  });
-  console.log(books[0]);
-
-  console.log("le livre le moins emprunté est :");
-
-  books.sort(function compare(a, b) {
-    if (a.rented < b.rented)
-       return -1;
-    if (a.rented > b.rented)
-       return 1;
-    return 0;
-  });
-  console.log(books[0]);
-
-
-
-
-  console.log("Trouve le livre avec l'ID: 873495:")
-
-  let resultat = books.find(index => index.id === 873495);
-  console.log(resultat);
-
-
-
-
-  console.log("Supprimer le livre avec l'ID: 133712:")
+console.log("Supprimer le livre avec l'ID: 133712:")
 
 let books_to_delete = books.find(element => element.id = 133712);
 
